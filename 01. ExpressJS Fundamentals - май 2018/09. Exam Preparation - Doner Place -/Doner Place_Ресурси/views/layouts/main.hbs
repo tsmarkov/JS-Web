@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/site.css">
+  <title>Dioner Mioner</title>
+</head>
+
+<body>
+  <header>
+    <span class="logo">Doner Place</span>
+    <ul class="menu">
+      <li>
+        <a class="button" href="/">Home</a>
+      </li>
+      {{#if currentUser}}
+      <li>
+        <a class="button" href="/order">Order Status</a>
+      </li>
+      <li>
+        <a class="button" href="/products/create">Create</a>
+      </li>
+      {{else}}
+      <li>
+        <a class="button" href="/users/login">Login</a>
+      </li>
+      <li>
+        <a class="button" href="/users/register">Register</a>
+      </li>
+      {{/if}}
+    </ul>
+    {{#if currentUser}}
+    <span class="greeting">Welcome, {{currentUser.roles}}! |
+      <a href="/users/logout">[logout]</a>
+    </span>
+    {{/if}}
+  </header>
+
+  {{#if error}}
+  <div style="background-color: rgb(177, 177, 177); color: rgb(211, 0, 0);">
+    <h3>{{error}}</h3>
+  </div>
+  {{/if}} {{{body}}}
+
+  <footer>Doner Place &copy; 2017</footer>
+</body>
+
+</html>

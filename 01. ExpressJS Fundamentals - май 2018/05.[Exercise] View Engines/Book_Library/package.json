@@ -1,0 +1,26 @@
+{
+  "name": "book_library",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "4.16.0",
+    "eslint": "4.19.1",
+    "express": "4.16.3",
+    "express-handlebars": "3.0.0",
+    "mongoose": "5.1.5",
+    "typings": "2.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}

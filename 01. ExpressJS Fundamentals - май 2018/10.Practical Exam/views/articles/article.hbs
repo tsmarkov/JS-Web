@@ -1,0 +1,13 @@
+<div class="spacer">
+    <h2>{{edit.articleTitle}}
+        <div class="controls">
+            {{#if currentUser}}
+            <a href="/articles/edit/{{edit.articleId}}">[edit]</a>
+            {{/if}}
+            <a href="/articles/history/{{edit.articleId}}">[history]</a>
+        </div>
+    </h2>
+    <article>
+         {{{edit.content}}}
+    </article>
+</div>
