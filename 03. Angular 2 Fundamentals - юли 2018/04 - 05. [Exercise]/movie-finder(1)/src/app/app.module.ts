@@ -10,13 +10,15 @@ import { MoviesService } from './service/movies.service';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MovieComponent } from './movie/movie.component'
 import { AppRoutingModule } from './app.routing';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     NavigationComponent,
-    MovieComponent
+    MovieComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

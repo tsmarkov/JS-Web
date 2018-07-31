@@ -1,0 +1,25 @@
+img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#movie-title {
+    display: block;
+    padding-top: 10px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#release-date {
+    display: block;
+    padding-top: 40px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#view-details {
+    padding-top: 20px;
+    text-align: center;
+}

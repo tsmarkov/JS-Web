@@ -1,7 +1,8 @@
 <h1>Movie component</h1>
 
-<!-- <main role="main" class="container">
+<main role="main" class="container">
 
+  <!-- Not implented Seach  -->
   <div class="jumbotron">
     <div class="container">
       <h1>Find a movie</h1>
@@ -19,15 +20,10 @@
       <h2 class="panel-title">Popular Movies</h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <div *ngFor="let movie of popular.results;let i=index" class="col-md-2">
+      <div *ngIf="popular" class="row">
+        <div *ngFor="let movie of popular;let i=index" class="col-md-2">
           <div *ngIf="i <6">
-            <img *ngIf="movie.poster_path" class="thumbnail"
-              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-            <h5 id="movie-title">{{movie.title}}</h5>
-            <p id="release-date">{{movie.release_date}}</p>
-            <p id="view-details"><a class="btn btn-default" href="#">View
-                Details</a></p>
+            <app-movie [movie]='movie'></app-movie>
           </div>
         </div>
       </div>
@@ -39,16 +35,11 @@
       <h2 class="panel-title">In Theaters</h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <div *ngFor="let movie of theaters.results;let i=index"
+      <div *ngIf="theaters" class="row">
+        <div *ngFor="let movie of theaters;let i=index"
           class="col-md-2">
           <div *ngIf="i <6">
-            <img *ngIf="movie.poster_path" class="thumbnail"
-              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-            <h5 id="movie-title">{{movie.title}}</h5>
-            <p id="release-date">{{movie.release_date}}</p>
-            <p id="view-details"><a class="btn btn-default" href="#">View
-                Details</a></p>
+            <app-movie [movie]='movie'></app-movie>
           </div>
         </div>
       </div>
@@ -60,16 +51,11 @@
       <h2 class="panel-title">Kids</h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <div *ngFor="let movie of kids.results;let i=index"
+      <div *ngIf="kids" class="row">
+        <div *ngFor="let movie of kids;let i=index"
           class="col-md-2">
           <div *ngIf="i <6">
-            <img *ngIf="movie.poster_path" class="thumbnail"
-              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-            <h5 id="movie-title">{{movie.title}}</h5>
-            <p id="release-date">{{movie.release_date}}</p>
-            <p id="view-details"><a class="btn btn-default" href="#">View
-                Details</a></p>
+            <app-movie [movie]='movie'></app-movie>
           </div>
         </div>
       </div>
@@ -81,16 +67,11 @@
       <h2 class="panel-title">Best Dramas</h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <div *ngFor="let movie of bestDramas.results;let i=index"
+      <div *ngIf="bestDramas" class="row">
+        <div *ngFor="let movie of bestDramas;let i=index"
           class="col-md-2">
           <div *ngIf="i <6">
-            <img *ngIf="movie.poster_path" class="thumbnail"
-              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-            <h5 id="movie-title">{{movie.title}}</h5>
-            <p id="release-date">{{movie.release_date}}</p>
-            <p id="view-details"><a class="btn btn-default" href="#">View
-                Details</a></p>
+            <app-movie [movie]='movie'></app-movie>
           </div>
         </div>
       </div>
@@ -102,20 +83,15 @@
       <h2 class="panel-title">Top Rated</h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <div *ngFor="let movie of topRated.results;let i=index"
+      <div *ngIf="topRated" class="row">
+        <div *ngFor="let movie of topRated;let i=index"
           class="col-md-2">
           <div *ngIf="i <6">
-            <img *ngIf="movie.poster_path" class="thumbnail"
-              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-            <h5 id="movie-title">{{movie.title}}</h5>
-            <p id="release-date">{{movie.release_date}}</p>
-            <p id="view-details"><a class="btn btn-default" href="#">View
-                Details</a></p>
+            <app-movie [movie]='movie'></app-movie>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-</main> -->
+</main>

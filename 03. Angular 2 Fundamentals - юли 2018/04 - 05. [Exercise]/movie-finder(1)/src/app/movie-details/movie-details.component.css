@@ -1,0 +1,15 @@
+.list-group {
+    width: 90%;
+}
+
+.panel-title {
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+
+img {
+    padding: 20px; 
+    /* width: 100%;
+    height: 100%; */
+}

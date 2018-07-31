@@ -1,26 +1,11 @@
-<!-- <div \\ensure that there is a movie in order to render this div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{place movie title here}}</h3>
-    </div>
-    <div class="panel-body">
-      <div class="row">
-        <div class="col-md-5">
-          <img class="thumbnail" src="http://image.tmdb.org/t/p/w500/{{place
-            poster path here}}">
-        </div>
-        <div class="col-md-7">
-          <ul class="list-group">
-            <li class="list-group-item">Genres: <span *ngFor="let genre of
-                movie.genres">{{list all genres for this movie}}</span></li>
-            <li class="list-group-item">Release Date: {{show the release date of
-              the movie}}</li>
-          </ul>
-          <br>
-          <a *ngIf="movie.homepage" href="{{place movie's home here}}"
-            target="_blank" class="btn btn-default">Visit Movie Website</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
+<div>
+  <img *ngIf="movie.poster_path" class="thumbnail"
+    src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
+  <h5 id="movie-title">{{movie.title}}</h5>
+  <p id="release-date">{{movie.release_date}}</p>
+  <p id="view-details">
+    <a class="btn btn-default" href="movie/{{movie.id}}">
+      View Details
+    </a>
+  </p>
+</div>

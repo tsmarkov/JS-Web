@@ -50,8 +50,7 @@ module.exports = {
             }).then(edits => {
                 res.redirect('/')
             })
-        })
-            .catch(err => {
+        }).catch(err => {
                 res.render('error/error', {
                     error: err
                 })
