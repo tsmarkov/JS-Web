@@ -16,7 +16,6 @@ class Welcome extends Component {
                         <Login />
                         <Register />
                     </div>
-
                     <About />
                 </div>
             </section>

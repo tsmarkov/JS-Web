@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import SubmitArea from './SubmitArea';
+import SubmitForm from './SubmitForm';
 
 class Submit extends Comment {
     render = () => {

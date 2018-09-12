@@ -97,7 +97,7 @@ class Catalog extends Component {
                             </div>
                         </div>
                     </article>
-                    <!-- TODO: more posts will come here -->
+                    {/* <!-- TODO: more posts will come here -->   */}
             </div>
             </section>
         )

@@ -7,6 +7,7 @@ import Notification from './components/common/Notifications';
 import Footer from './components/common/Footer';
 import Welcome from './components/welcome/Welcome';
 import Logout from './components/user/Logout'
+import Container from './components/Container';
 
 
 class App extends Component {
@@ -16,7 +17,8 @@ class App extends Component {
         <Header />
         <Notification />
         <Switch>
-          <Route path='/' component={Welcome} />
+          <Route path='/' exact component={Welcome} />
+          <Route path='/container' component={Container} />
           <Route path='/logout' component={Logout} />
         </Switch>
         <Footer />

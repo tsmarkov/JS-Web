@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1 class="display-3">Home</h1>
+  <div *ngIf="this.authService.isLoged(); else sign">
+    <h3>Welcome {{this.authService.username}}!</h3>
+  </div>
+  
+  <ng-template #sign>
+    <p id="sign-up">
+      <a class="btn btn-lg btn-success" routerLink="/register" role="button">Sign up today</a>
+    </p>
+    <p class="lead">... or die like a hero</p>
+  </ng-template>
+</div>

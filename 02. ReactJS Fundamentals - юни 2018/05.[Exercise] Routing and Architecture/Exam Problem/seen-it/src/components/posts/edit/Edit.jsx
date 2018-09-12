@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import EditArea from './EditArea';
+import EditForm from './EditForm';
 
 class Edit extends Component {
     render = () => {

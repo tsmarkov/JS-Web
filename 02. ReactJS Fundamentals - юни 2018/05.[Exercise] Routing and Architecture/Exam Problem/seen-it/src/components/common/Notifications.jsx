@@ -13,7 +13,7 @@ class Notifications extends Component {
         super(props)
         this.state = DEFAULT_STATE
 
-        observer.subscribe(observer.events.notifications, this.showNotification)
+        // observer.subscribe(observer.events.notifications, this.showNotification)
     }
 
     showNotification = (data) => {
@@ -27,7 +27,7 @@ class Notifications extends Component {
     }
 
     hideNotification = () => {
-        this.setState({...DEFAULT_STATE})
+        this.setState({ ...DEFAULT_STATE })
     }
 
     render = () => {
